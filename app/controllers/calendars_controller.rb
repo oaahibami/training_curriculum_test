@@ -40,7 +40,7 @@ class CalendarsController < ApplicationController
         wday_num = wday_num - 7
       end
 
-      days = {:month => (@todays_date + x).month,:date => (@todays_date + x).day,:plans => today_plans,:wday => wdays[wday_num]} # wdays配列から該当する曜日の値を取得
+      days = { month: (@todays_date + x).month, date: (@todays_date + x).day, plans: today_plans, wday: wdays[wday_num] }# wdays配列から該当する曜日の値を取得
       @week_days.push(days)
     end
 
